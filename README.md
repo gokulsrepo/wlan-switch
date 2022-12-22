@@ -7,6 +7,6 @@ This tool will allow you to automate the process of switching your wifi card bet
 
 Give execute permission to the file by: chmod +x ./wlan-switch.sh <br>
 
-Required tools to install :
+Required tools to install: <br>
 macchanger<br>
 aircrack-ng
