@@ -1,6 +1,6 @@
 # wlan-switch
 
-switch using switch case <br>
+Monitor mode switcher <br>
 Usage: ./wlan-switch begin|end <br>
 
 This tool will allow you to automate the process of switching your wifi card between monitor mode and managed mode. Also this tool will randomize your mac address. <br>
