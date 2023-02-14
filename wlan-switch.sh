@@ -2,30 +2,32 @@
 sudo apt install figlet
 figlet -f slant wlan-switch
 echo "A WLAN mode switcher by bi66y"
+iwconfig
+read -p "Choose the adaptor for switching:" adaptor
 
 case $1 in
 begin)
 echo "Monitor mode - Start"
-sudo airmon-ng start wlan0
-sudo airmon-ng check kill
+sudo airmon-ng start $adaptor
+#sudo airmon-ng check kill
 echo "Down"
-sudo ifconfig wlan0 down
+sudo ifconfig $adaptor down
 echo "Changing MAC"
-sudo macchanger -br wlan0
+sudo macchanger -br 
 echo "Up"
-sudo ifconfig wlan0 up
+sudo ifconfig $adaptor up
 sudo ifconfig
 ;;
 
 end)
 echo "Monitor mode - Stop"
-sudo airmon-ng stop wlan0
+sudo airmon-ng stop $adaptor
 echo "Down"
-sudo ifconfig wlan0 down
+sudo ifconfig $adaptor down
 echo "Changing MAC"
-sudo macchanger -p wlan0
+sudo macchanger -p $adaptor
 echo "Up"
-sudo ifconfig wlan0 up
+sudo ifconfig $adaptor up
 sudo ifconfig
 ;;
 
