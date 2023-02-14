@@ -30,10 +30,10 @@ sudo ifconfig
 ;;
 
 -h | --help)
-echo "Usage: ./wl4n.sh begin|end "
+echo "Usage: ./wlan.sh begin|end "
 ;;
 
 *)
-echo "Usage: ./wl4n.sh begin|end "
+echo "Usage: ./wlan.sh begin|end "
 ;;
 esac
