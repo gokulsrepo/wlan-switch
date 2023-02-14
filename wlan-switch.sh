@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt install figlet
 figlet -f slant wlan-switch
 echo "A WLAN mode switcher by bi66y"
 
