@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt install figlet
 figlet -f slant wlan-switch
-echo "A WLAN mode switcher by bi66y"
+echo "A WLAN mode switcher by G"
 echo "Available adaptors on your machine:"
 netstat -i | awk '{print $1}' | sed -e '1,2d'
 read -p "Choose the adaptor for switching:" adaptor
