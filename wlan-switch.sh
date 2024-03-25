@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install figlet
+sudo apt install figlet -y
 figlet -f slant wlan-switch
 echo "A WLAN mode switcher by G"
 echo "Available adaptors on your machine:"
