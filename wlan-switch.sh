@@ -1,4 +1,10 @@
 #!/bin/bash
+if ! command -v figlet &> /dev/null
+then
+    echo "figlet is not installed. Installing..."
+    sudo apt-get install -y figlet
+fi
+
 sudo apt install figlet -y
 figlet -f slant wlan-switch
 echo "A WLAN mode switcher by G"
